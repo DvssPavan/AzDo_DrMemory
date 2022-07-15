@@ -190,7 +190,7 @@ class DrMemoryTask:
     def send_mail(self, attachments):
         SERVER = "smtp-mail.outlook.com"
         USER = self.receiver_email[:self.receiver_email.find("@")]
-        FROM = USER + "@magnitude.com"
+        FROM = USER + "@insightsoftware.com"
         TO = [self.receiver_email]  # must be a list
 
         # Prepare actual message
@@ -216,7 +216,7 @@ class DrMemoryTask:
         server.ehlo()
         server.starttls()
         server.ehlo()
-        server.login(USER + "@magsw.com", self.outlook_password)
+        server.login(USER + "@insightsoftware.com", self.outlook_password)
         server.sendmail(FROM, TO, msg.as_string())
         server.quit()
 
