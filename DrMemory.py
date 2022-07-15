@@ -59,7 +59,7 @@ class DrMemoryTask:
         if url is not None:
             # get branch info for Compile/FT plan for win32 platform
             branch_info = bamboo.get_branch_info(
-                          "BULDOMEM-WIN2012R2VS000201332" if projectKey == "BULDOMEM" else "TSTFOMEM-WIN2012R26432M",
+                          "BULDOMEM-WIN2012R2VS000201532" if projectKey == "BULDOMEM" else "TSTFOMEM-WIN2012R26432M",
                           self.branch_name)
             branch_key = branch_info['key']
 
@@ -102,7 +102,7 @@ class DrMemoryTask:
             "AFL": 0,
             "VERACODE": 0,
             "CODE_ANALYSIS": 0,
-            "COMPILER": 'vs2013',
+            "COMPILER": 'vs2015',
             "BUILD_SOURCE": 'w2012r2'
         }
         return params
