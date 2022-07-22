@@ -192,7 +192,9 @@ class DrMemoryTask:
         USER = self.receiver_email[:self.receiver_email.find("@")]
         FROM = USER + "@insightsoftware.com"
         TO = [self.receiver_email]  # must be a list
-
+        print(USER)
+        print(FROM)
+        print(TO)
         # Prepare actual message
         msg = MIMEMultipart()
         msg['From'] = FROM
