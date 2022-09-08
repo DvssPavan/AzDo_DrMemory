@@ -184,7 +184,7 @@ class DrMemoryTask:
                 f.close()
 
         # Send all parsed results files as attachments in mail
-        self.send_mail(files)
+        #self.send_mail(files)
 
     """Send an email"""
     def send_mail(self, attachments):
